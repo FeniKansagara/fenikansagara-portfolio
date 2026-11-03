@@ -1,43 +1,4 @@
 
-<?php
-$posts = [
-    [
-        "title" => "DAY 1",
-        "image" => "../images/post1.png",
-        "description" => "The Learning Begins"
-    ],
-    [
-        "title" => "DAY 2",
-        "image" => "../images/post2.png",
-        "description" => "From Training to Talent"
-    ],
-    [
-        "title" => "DAY 3",
-        "image" => "../images/post3.png",
-        "description" => "Turn Skills into Strength"
-    ],
-    [
-        "title" => "DAY 4",
-        "image" => "../images/post4.png",
-        "description" => "Practice Makes Progress"
-    ],
-    [
-        "title" => "DAY 5",
-        "image" => "../images/post5.png",
-        "description" => "Train. Create. Achieve."
-    ],
-    [
-        "title" => "DAY 6",
-        "image" => "../images/post6.png",
-        "description" => "Your Skills, Your Future"
-    ],
-    [
-        "title" => "DAY 7",
-        "image" => "../images/post7.png",
-        "description" => "Learn. Practice. Grow."
-    ]
-];
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -191,7 +152,7 @@ footer {
 <header>
     <div class="header-container">
         <div class="logo">MyPortfolio.</div>
-        <a href="../index.php#projects" class="back-btn">← Back</a>
+        <a href="../index.html#projects" class="back-btn">← Back</a>
     </div>
 </header>
 
@@ -203,18 +164,70 @@ footer {
     </div>
 
     <div class="posts-grid">
-        <?php foreach ($posts as $post) { ?>
-            <div class="post-card">
-                <img src="<?php echo htmlspecialchars($post['image']); ?>"
-                     alt="<?php echo htmlspecialchars($post['title']); ?>">
+                    <div class="post-card">
+                <img src="../images/post1.png"
+                     alt="DAY 1">
 
                 <div class="post-info">
-                    <h3><?php echo htmlspecialchars($post['title']); ?></h3>
-                    <p><?php echo htmlspecialchars($post['description']); ?></p>
+                    <h3>DAY 1</h3>
+                    <p>The Learning Begins</p>
                 </div>
             </div>
-        <?php } ?>
-    </div>
+                    <div class="post-card">
+                <img src="../images/post2.png"
+                     alt="DAY 2">
+
+                <div class="post-info">
+                    <h3>DAY 2</h3>
+                    <p>From Training to Talent</p>
+                </div>
+            </div>
+                    <div class="post-card">
+                <img src="../images/post3.png"
+                     alt="DAY 3">
+
+                <div class="post-info">
+                    <h3>DAY 3</h3>
+                    <p>Turn Skills into Strength</p>
+                </div>
+            </div>
+                    <div class="post-card">
+                <img src="../images/post4.png"
+                     alt="DAY 4">
+
+                <div class="post-info">
+                    <h3>DAY 4</h3>
+                    <p>Practice Makes Progress</p>
+                </div>
+            </div>
+                    <div class="post-card">
+                <img src="../images/post5.png"
+                     alt="DAY 5">
+
+                <div class="post-info">
+                    <h3>DAY 5</h3>
+                    <p>Train. Create. Achieve.</p>
+                </div>
+            </div>
+                    <div class="post-card">
+                <img src="../images/post6.png"
+                     alt="DAY 6">
+
+                <div class="post-info">
+                    <h3>DAY 6</h3>
+                    <p>Your Skills, Your Future</p>
+                </div>
+            </div>
+                    <div class="post-card">
+                <img src="../images/post7.png"
+                     alt="DAY 7">
+
+                <div class="post-info">
+                    <h3>DAY 7</h3>
+                    <p>Learn. Practice. Grow.</p>
+                </div>
+            </div>
+            </div>
 
 </main>
 
