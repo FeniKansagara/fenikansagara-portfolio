@@ -1,18 +1,4 @@
 
-<?php
-$reels = [
-    [
-        "title" => "AI Reel 1",
-        "subtitle" => "Master AI Tools for Smarter Digital Marketing",
-        "video" => "../images/reel1.mp4"
-    ],
-    [
-        "title" => "AI Reel 2",
-        "subtitle" =>"Use AI Upgrade Your Digital Marketing Strategy",
-        "video" => "../images/reel2.mp4"
-    ]
-];
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -149,7 +135,7 @@ footer {
 <header>
     <div class="header-container">
         <div class="logo">MyPortfolio.</div>
-     <a href="ai-reels-organic.php" class="back-btn">← Back</a>
+     <a href="ai-reels-organic.html" class="back-btn">← Back</a>
     </div>
 </header>
 
@@ -161,23 +147,33 @@ footer {
     </div>
 
     <div class="reels-grid">
-        <?php foreach ($reels as $reel) { ?>
-            <div class="reel-card">
+                    <div class="reel-card">
                 <video class="reel-video" controls playsinline preload="metadata">
                     <source
-                        src="<?php echo htmlspecialchars($reel['video']); ?>"
+                        src="../images/reel1.mp4"
                         type="video/mp4"
                     >
                     Your browser does not support video playback.
                 </video>
 
-                <h2><?php echo htmlspecialchars($reel['title']); ?></h2>
+                <h2>AI Reel 1</h2>
                 <p class="reel-subtitle">
-    <?php echo htmlspecialchars($reel['subtitle']); ?>
-</p>
+    Master AI Tools for Smarter Digital Marketing</p>
             </div>
-        <?php } ?>
-    </div>
+                    <div class="reel-card">
+                <video class="reel-video" controls playsinline preload="metadata">
+                    <source
+                        src="../images/reel2.mp4"
+                        type="video/mp4"
+                    >
+                    Your browser does not support video playback.
+                </video>
+
+                <h2>AI Reel 2</h2>
+                <p class="reel-subtitle">
+    Use AI Upgrade Your Digital Marketing Strategy</p>
+            </div>
+            </div>
 
 </main>
 
