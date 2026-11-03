@@ -1,25 +1,4 @@
 
-<?php
-$auditDate = "04 August 2026";
-$website = "https://mdidminfoway.com/";
-
-$pages = ["Home", "About", "Service", "Feature", "Team", "Blog", "Contact"];
-
-$onPageSEO = [
-    ["Title Tag", "Available"],
-    ["Meta Description", "Available"],
-    ["H1 Heading", "Multiple"],
-    ["Internal Links", "Not Available"],
-    ["URL Structure", "Good"]
-];
-
-$technicalSEO = [
-    ["robots.txt", "Missing"],
-    ["sitemap.xml", "Missing"],
-    ["Mobile Friendly", "Yes"],
-    ["Page Speed", "Good"]
-];
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -204,7 +183,7 @@ th {
     <div class="header-container">
         <div class="logo">MyPortfolio.</div>
 
-        <a href="seo-audit-blog.php" class="back-btn">
+        <a href="seo-audit-blog.html" class="back-btn">
             ← Back
         </a>
     </div>
@@ -224,16 +203,20 @@ th {
 
     <h2>Website Details</h2>
 
-    <p><strong>Website:</strong> <?php echo $website; ?></p>
-    <p><strong>Audit Date:</strong> <?php echo $auditDate; ?></p>
+    <p><strong>Website:</strong> https://mdidminfoway.com/</p>
+    <p><strong>Audit Date:</strong> 04 August 2026</p>
 
     <h2>Website Pages Reviewed</h2>
 
     <div class="page-list">
-        <?php foreach ($pages as $page) { ?>
-            <span><?php echo $page; ?></span>
-        <?php } ?>
-    </div>
+                    <span>Home</span>
+                    <span>About</span>
+                    <span>Service</span>
+                    <span>Feature</span>
+                    <span>Team</span>
+                    <span>Blog</span>
+                    <span>Contact</span>
+            </div>
 
     <h2>On-Page SEO</h2>
 
@@ -243,13 +226,27 @@ th {
             <th>Status</th>
         </tr>
 
-        <?php foreach ($onPageSEO as $item) { ?>
-        <tr>
-            <td><?php echo $item[0]; ?></td>
-            <td class="status"><?php echo $item[1]; ?></td>
+                <tr>
+            <td>Title Tag</td>
+            <td class="status">Available</td>
         </tr>
-        <?php } ?>
-    </table>
+                <tr>
+            <td>Meta Description</td>
+            <td class="status">Available</td>
+        </tr>
+                <tr>
+            <td>H1 Heading</td>
+            <td class="status">Multiple</td>
+        </tr>
+                <tr>
+            <td>Internal Links</td>
+            <td class="status">Not Available</td>
+        </tr>
+                <tr>
+            <td>URL Structure</td>
+            <td class="status">Good</td>
+        </tr>
+            </table>
 
     <h2>Technical SEO</h2>
 
@@ -259,13 +256,23 @@ th {
             <th>Status</th>
         </tr>
 
-        <?php foreach ($technicalSEO as $item) { ?>
-        <tr>
-            <td><?php echo $item[0]; ?></td>
-            <td class="status"><?php echo $item[1]; ?></td>
+                <tr>
+            <td>robots.txt</td>
+            <td class="status">Missing</td>
         </tr>
-        <?php } ?>
-    </table>
+                <tr>
+            <td>sitemap.xml</td>
+            <td class="status">Missing</td>
+        </tr>
+                <tr>
+            <td>Mobile Friendly</td>
+            <td class="status">Yes</td>
+        </tr>
+                <tr>
+            <td>Page Speed</td>
+            <td class="status">Good</td>
+        </tr>
+            </table>
 
     <h2>Conclusion</h2>
 
