@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Audit & Blog | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --black:#171717;
+    --dark-grey:#303030;
+    --grey:#777777;
+    --off-white:#f8f8f8;
+    --white:#ffffff;
+    --border:#dedede;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--off-white);
+    color:var(--dark-grey);
+    line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+.container{width:84%;max-width:1200px;margin:auto}
+header{
+    background:white;
+    border-bottom:1px solid var(--border);
+}
+.navbar{
+    min-height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    font-weight:700;
+    color:var(--black);
+}
+.back-btn{
+    background:var(--black);
+    color:white;
+    padding:10px 18px;
+    border-radius:5px;
+    font-size:13px;
+    font-weight:600;
+}
+.main{padding:85px 0}
+.heading{text-align:center;margin-bottom:50px}
+.heading span{
+    font-size:11px;
+    letter-spacing:3px;
+    font-weight:700;
+    color:var(--grey);
+}
+.heading h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(30px,4vw,42px);
+    color:var(--black);
+    margin:10px 0;
+}
+.heading p{font-size:14px;color:var(--grey)}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:25px;
+    max-width:900px;
+    margin:auto;
+}
+.card{
+    background:white;
+    padding:38px 32px;
+    border:1px solid var(--border);
+    border-radius:8px;
+    transition:.3s;
+}
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    border-color:#aaa;
+}
+.number{
+    width:48px;height:48px;
+    display:flex;align-items:center;justify-content:center;
+    background:var(--black);color:white;
+    border-radius:6px;font-weight:600;
+    margin-bottom:25px;
+}
+.card h2{
+    font-family:'Playfair Display',serif;
+    font-size:27px;color:var(--black);
+    margin-bottom:12px;
+}
+.card p{font-size:13px;margin-bottom:25px}
+.view{
+    display:inline-block;
+    background:var(--black);
+    color:white;padding:11px 20px;
+    border-radius:5px;font-size:12px;
+    font-weight:600;transition:.3s;
+}
+.view:hover{background:#555}
+footer{
+    text-align:center;
+    padding:22px;
+    border-top:1px solid var(--border);
+    background:white;
+    color:var(--grey);
+    font-size:12px;
+}
+@media(max-width:650px){
+    .container{width:90%}
+    .cards{grid-template-columns:1fr}
+    .main{padding:55px 0}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+        <a href="../index.php" class="logo">My<span>Portfolio.</span></a>
+        <a href="../index.php#projects" class="back-btn">← Back to Projects</a>
+    </div>
+</header>
+
+<main class="main">
+    <div class="container">
+
+        <div class="heading">
+            <span>MY PROJECTS</span>
+            <h1>SEO Audit & Blog Writing</h1>
+            <p>Explore my SEO analysis and blog writing work.</p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="number">01</div>
+                <h2>SEO Audit</h2>
+                <p>Website analysis, on-page SEO and technical SEO checking.</p>
+                <a href="seo-audit.php" class="view">View SEO Audit →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">02</div>
+                <h2>Blog Writing</h2>
+                <p>SEO-friendly blog topics, content writing and keyword usage.</p>
+                <a href="blog.php" class="view">View Blogs →</a>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer>© 2026 My Portfolio. All Rights Reserved.</footer>
+
+</body>
+</html>

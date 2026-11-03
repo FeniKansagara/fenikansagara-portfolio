@@ -1,0 +1,285 @@
+
+<?php
+$auditDate = "04 August 2026";
+$website = "https://mdidminfoway.com/";
+
+$pages = ["Home", "About", "Service", "Feature", "Team", "Blog", "Contact"];
+
+$onPageSEO = [
+    ["Title Tag", "Available"],
+    ["Meta Description", "Available"],
+    ["H1 Heading", "Multiple"],
+    ["Internal Links", "Not Available"],
+    ["URL Structure", "Good"]
+];
+
+$technicalSEO = [
+    ["robots.txt", "Missing"],
+    ["sitemap.xml", "Missing"],
+    ["Mobile Friendly", "Yes"],
+    ["Page Speed", "Good"]
+];
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Audit | MyPortfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7f7f7;
+    color: #171717;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.top-header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 22px 0;
+}
+
+.header-container {
+    max-width: 1160px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.back-btn {
+    background: #171717;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 23px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #444;
+}
+
+/* Main Content */
+.container {
+    max-width: 1160px;
+    margin: 70px auto;
+    padding: 55px 52px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.tag {
+    color: #777;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 28px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    margin: 35px 0 20px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 17px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 15px;
+}
+
+th {
+    background: #f5f5f5;
+    font-weight: bold;
+}
+
+.status {
+    font-weight: bold;
+    color: #333;
+}
+
+.page-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.page-list span {
+    background: #f2f2f2;
+    padding: 11px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.footer {
+    text-align: center;
+    color: #888;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media(max-width: 768px) {
+    .container {
+        margin: 30px 15px;
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    th, td {
+        padding: 12px 8px;
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="top-header">
+    <div class="header-container">
+        <div class="logo">MyPortfolio.</div>
+
+        <a href="seo-audit-blog.php" class="back-btn">
+            ← Back
+        </a>
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="tag">SEO PROJECT</div>
+
+    <h1>SEO Audit Report</h1>
+
+    <div class="subtitle">
+        Website Analysis | Technical SEO | On-Page SEO
+    </div>
+
+    <hr>
+
+    <h2>Website Details</h2>
+
+    <p><strong>Website:</strong> <?php echo $website; ?></p>
+    <p><strong>Audit Date:</strong> <?php echo $auditDate; ?></p>
+
+    <h2>Website Pages Reviewed</h2>
+
+    <div class="page-list">
+        <?php foreach ($pages as $page) { ?>
+            <span><?php echo $page; ?></span>
+        <?php } ?>
+    </div>
+
+    <h2>On-Page SEO</h2>
+
+    <table>
+        <tr>
+            <th>SEO Element</th>
+            <th>Status</th>
+        </tr>
+
+        <?php foreach ($onPageSEO as $item) { ?>
+        <tr>
+            <td><?php echo $item[0]; ?></td>
+            <td class="status"><?php echo $item[1]; ?></td>
+        </tr>
+        <?php } ?>
+    </table>
+
+    <h2>Technical SEO</h2>
+
+    <table>
+        <tr>
+            <th>SEO Element</th>
+            <th>Status</th>
+        </tr>
+
+        <?php foreach ($technicalSEO as $item) { ?>
+        <tr>
+            <td><?php echo $item[0]; ?></td>
+            <td class="status"><?php echo $item[1]; ?></td>
+        </tr>
+        <?php } ?>
+    </table>
+
+    <h2>Conclusion</h2>
+
+    <p>
+        The website has a good URL structure, mobile-friendly design
+        and page speed. However, improvements are required in internal
+        linking, robots.txt and sitemap.xml to strengthen its SEO performance.
+    </p>
+
+</main>
+
+<footer class="footer">
+    © 2026 MyPortfolio. All Rights Reserved.
+</footer>
+
+</body>
+</html>
