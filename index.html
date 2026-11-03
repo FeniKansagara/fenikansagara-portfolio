@@ -1,33 +1,4 @@
 
-<?php
-$name = "Feni Kansagara";
-$role = "Digital Marketing intern";
-$company = "MDIDM Infoway";
-$email = "your-email@example.com";
-$linkedin = "https://www.linkedin.com/";
-
-$projects = [
-    ["SEO Audit & blog", "Website analysis, meta tags, headings and technical SEO.", "SEO"],
-    ["Google Ads & meta ads Campaign", "Keyword research, ad copy and campaign planning.", "Google Ads"],
-    ["AI reels & organic", "Website traffic, user behaviour and performance analysis.", "Ai reels"],
-    ["Email Marketing", "Email campaigns, welcome emails and automation workflows.", "Email Marketing"],
-    ["Affiliate Marketing", "Product promotion and affiliate content strategies.", "Affiliate"],
-    ["Social Media Marketing", "Social media content planning and engagement strategies.", "Social Media"]
-];
-
-$skills = [
-    "Search Engine Optimization",
-    "Social Media Marketing",
-    "Google Ads",
-    "Meta Ads",
-    "Content Writing",
-    "Canva Design",
-    "Email Marketing",
-    "AI reels & organic",
-    "WordPress",
-    "Affiliate Marketing"
-];
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +6,7 @@ $skills = [
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title><?php echo htmlspecialchars($name); ?> | Portfolio</title>
+<title>Feni Kansagara | Portfolio</title>
 <meta name="description" content="Digital marketing portfolio of Feni Kansagara.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -770,17 +741,16 @@ footer span {
 
         <div>
             <div class="hero-label">
-                <?php echo htmlspecialchars($role); ?>
-            </div>
+                Digital Marketing intern            </div>
 
             <h1>
                 Hello, I'm<br>
-                <span><?php echo htmlspecialchars($name); ?></span>
+                <span>Feni Kansagara</span>
             </h1>
 
             <p class="hero-description">
                 I am learning digital marketing at
-                <?php echo htmlspecialchars($company); ?>.
+                MDIDM Infoway.
                 I enjoy exploring SEO, social media, online advertising
                 and creative strategies that help brands grow.
             </p>
@@ -795,7 +765,7 @@ footer span {
            <div class="profile-circle">
     <img src="images/feni.jpg" alt="Feni Kansagara">
 </div>
-            <h3><?php echo htmlspecialchars($name); ?></h3>
+            <h3>Feni Kansagara</h3>
             <p>Digital Marketing | SEO | Social Media</p>
             <div class="small-label">LEARN • CREATE • GROW</div>
         </div>
@@ -829,9 +799,9 @@ footer span {
                 <h3>Nice to Meet You!</h3>
 
                 <p>
-                    I'm <?php echo htmlspecialchars($name); ?>, a TYBCA student
+                    I'm Feni Kansagara, a TYBCA student
                     and Digital Marketing Intern at
-                    <?php echo htmlspecialchars($company); ?>.
+                    MDIDM Infoway.
                 </p>
 
                 <p>
@@ -865,35 +835,96 @@ footer span {
 
         <div class="projects-grid">
            
-<?php foreach ($projects as $index => $project): ?>
-    <?php
-       $projectLinks = [
-    "projects/seo-audit-blog.php",
-    "projects/google-ads-meta-ads.php",
-    "projects/ai-reels-organic.php",
-    "projects/email-marketing.php",
-    "projects/affiliate-marketing.php",
-    "projects/social-media.php"
-];
-    ?>
-
-    <a href="<?php echo $projectLinks[$index]; ?>" class="project-card">
+    
+    <a href="projects/seo-audit-blog.html" class="project-card">
 
         <div class="project-number">
-            <?php echo str_pad($index + 1, 2, "0", STR_PAD_LEFT); ?>
-        </div>
+            01        </div>
 
-        <h3><?php echo htmlspecialchars($project[0]); ?></h3>
-        <p><?php echo htmlspecialchars($project[1]); ?></p>
+        <h3>SEO Audit &amp; blog</h3>
+        <p>Website analysis, meta tags, headings and technical SEO.</p>
 
         <span class="project-tag">
-            <?php echo htmlspecialchars($project[2]); ?>
-        </span>
+            SEO        </span>
 
         <p>View Project →</p>
 
     </a>
-<?php endforeach; ?>
+    
+    <a href="projects/google-ads-meta-ads.html" class="project-card">
+
+        <div class="project-number">
+            02        </div>
+
+        <h3>Google Ads &amp; meta ads Campaign</h3>
+        <p>Keyword research, ad copy and campaign planning.</p>
+
+        <span class="project-tag">
+            Google Ads        </span>
+
+        <p>View Project →</p>
+
+    </a>
+    
+    <a href="projects/ai-reels-organic.html" class="project-card">
+
+        <div class="project-number">
+            03        </div>
+
+        <h3>AI reels &amp; organic</h3>
+        <p>Website traffic, user behaviour and performance analysis.</p>
+
+        <span class="project-tag">
+            Ai reels        </span>
+
+        <p>View Project →</p>
+
+    </a>
+    
+    <a href="projects/email-marketing.html" class="project-card">
+
+        <div class="project-number">
+            04        </div>
+
+        <h3>Email Marketing</h3>
+        <p>Email campaigns, welcome emails and automation workflows.</p>
+
+        <span class="project-tag">
+            Email Marketing        </span>
+
+        <p>View Project →</p>
+
+    </a>
+    
+    <a href="projects/affiliate-marketing.html" class="project-card">
+
+        <div class="project-number">
+            05        </div>
+
+        <h3>Affiliate Marketing</h3>
+        <p>Product promotion and affiliate content strategies.</p>
+
+        <span class="project-tag">
+            Affiliate        </span>
+
+        <p>View Project →</p>
+
+    </a>
+    
+    <a href="projects/social-media.html" class="project-card">
+
+        <div class="project-number">
+            06        </div>
+
+        <h3>Social Media Marketing</h3>
+        <p>Social media content planning and engagement strategies.</p>
+
+        <span class="project-tag">
+            Social Media        </span>
+
+        <p>View Project →</p>
+
+    </a>
 
 
 
@@ -914,12 +945,27 @@ footer span {
             <h3>Digital Marketing Skills</h3>
 
             <div class="skills-grid">
-                <?php foreach ($skills as $skill): ?>
-                    <div class="skill">
-                        <?php echo htmlspecialchars($skill); ?>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+                                    <div class="skill">
+                        Search Engine Optimization                    </div>
+                                    <div class="skill">
+                        Social Media Marketing                    </div>
+                                    <div class="skill">
+                        Google Ads                    </div>
+                                    <div class="skill">
+                        Meta Ads                    </div>
+                                    <div class="skill">
+                        Content Writing                    </div>
+                                    <div class="skill">
+                        Canva Design                    </div>
+                                    <div class="skill">
+                        Email Marketing                    </div>
+                                    <div class="skill">
+                        AI reels &amp; organic                    </div>
+                                    <div class="skill">
+                        WordPress                    </div>
+                                    <div class="skill">
+                        Affiliate Marketing                    </div>
+                            </div>
         </div>
 
     </div>
@@ -1012,8 +1058,7 @@ footer span {
 <footer>
     <div class="container">
         <p>
-            &copy; <?php echo date("Y"); ?>
-            <span><?php echo htmlspecialchars($name); ?></span>.
+            &copy; 2026            <span>Feni Kansagara</span>.
             Digital Marketing Portfolio.
         </p>
     </div>
