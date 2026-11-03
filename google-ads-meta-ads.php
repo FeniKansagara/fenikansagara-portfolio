@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Ads Project | Feni Kansagara</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f5f5;color:#222}
+header{background:#171717;padding:25px 8%}
+header a{color:white;text-decoration:none}
+main{max-width:900px;margin:45px auto;padding:35px;background:white;border-radius:12px}
+h1{color:#b58b45;font-size:36px}
+li{margin:12px 0;line-height:1.6}
+.tag{display:inline-block;background:#eee7da;padding:8px 12px;border-radius:20px;margin:5px}
+.back{display:inline-block;margin-top:25px;padding:12px 20px;background:#171717;color:white;text-decoration:none;border-radius:5px}
+footer{text-align:center;padding:25px;color:#666}
+</style>
+</head>
+<body>
+<header><a href="../index.php">← Back to Portfolio</a></header>
+<main>
+<p>MY PROJECT / 02</p>
+<h1>Google Ads Campaign</h1>
+<p>Planning and creating a Google Ads campaign as part of my digital marketing training.</p>
+<h2>Work Completed</h2>
+<ul>
+<li>Prepared ad headlines and descriptions.</li>
+<li>Selected relevant keywords and search themes.</li>
+<li>Planned audience targeting.</li>
+<li>Prepared call-to-action and sitelink ideas.</li>
+<li>Learned campaign goals and budget planning.</li>
+</ul>
+<h2>Skills Used</h2>
+<span class="tag">Google Ads</span>
+<span class="tag">Keyword Research</span>
+<span class="tag">Ad Copywriting</span>
+<br><a class="back" href="../index.php">Back to Home</a>
+</main>
+<footer>© 2026 Feni Kansagara | Portfolio</footer>
+</body>
+</html>
