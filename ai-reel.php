@@ -1,0 +1,189 @@
+
+<?php
+$reels = [
+    [
+        "title" => "AI Reel 1",
+        "subtitle" => "Master AI Tools for Smarter Digital Marketing",
+        "video" => "../images/reel1.mp4"
+    ],
+    [
+        "title" => "AI Reel 2",
+        "subtitle" =>"Use AI Upgrade Your Digital Marketing Strategy",
+        "video" => "../images/reel2.mp4"
+    ]
+];
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Reels | MyPortfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #171717;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 22px 0;
+}
+
+.header-container {
+    max-width: 1160px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.back-btn {
+    background: #171717;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 23px;
+    border-radius: 6px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 15px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-title h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+.reels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.reel-card {
+    max-width: 340px;
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.reel-video {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    display: block;
+    object-fit: cover;
+    background: #000;
+    border-radius: 8px;
+}
+
+.reel-card h2 {
+    font-size: 18px;
+    margin: 15px 5px 5px;
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    padding: 25px;
+    font-size: 14px;
+}
+
+@media(max-width: 600px) {
+    .reels-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}
+.reel-subtitle {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+    margin: 8px 5px 5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo">MyPortfolio.</div>
+     <a href="ai-reels-organic.php" class="back-btn">← Back</a>
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="page-title">
+        <h1>AI Reels</h1>
+        <p>Watch my AI-powered Instagram Reels</p>
+    </div>
+
+    <div class="reels-grid">
+        <?php foreach ($reels as $reel) { ?>
+            <div class="reel-card">
+                <video class="reel-video" controls playsinline preload="metadata">
+                    <source
+                        src="<?php echo htmlspecialchars($reel['video']); ?>"
+                        type="video/mp4"
+                    >
+                    Your browser does not support video playback.
+                </video>
+
+                <h2><?php echo htmlspecialchars($reel['title']); ?></h2>
+                <p class="reel-subtitle">
+    <?php echo htmlspecialchars($reel['subtitle']); ?>
+</p>
+            </div>
+        <?php } ?>
+    </div>
+
+</main>
+
+<footer>
+    © 2026 MyPortfolio. All Rights Reserved.
+</footer>
+
+</body>
+</html>
