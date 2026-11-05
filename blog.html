@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +22,45 @@ body {
     color: #171717;
 }
 
+/* Header */
+.top-header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 22px 0;
+}
+
+.header-container {
+    max-width: 1160px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #171717;
+}
+
+.back-btn {
+    background: #171717;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 23px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #444;
+}
+
+/* Blog section */
 .blog-container {
     max-width: 1390px;
     margin: 45px auto;
@@ -110,6 +148,7 @@ body {
     color: #555;
 }
 
+/* Responsive */
 @media(max-width: 1000px) {
     .blog-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -128,118 +167,131 @@ body {
     .blog-container {
         margin: 30px auto;
     }
+
+    .logo {
+        font-size: 24px;
+    }
 }
 </style>
 </head>
 
 <body>
 
+<!-- Header with Back button -->
+<header class="top-header">
+    <div class="header-container">
+        <h2 class="logo">MyPortfolio.</h2>
+        <a href="seo-audit-blog.php" class="back-btn">← Back</a>
+    </div>
+</header>
+
 <main class="blog-container">
 
     <div class="blog-heading">
         <h1>Blogs</h1>
-        <p>Explore our latest insights, ideas, and digital marketing trends.</p>
+        <p>Explore my latest insights, ideas, and digital marketing trends.</p>
     </div>
 
     <div class="blog-grid">
 
-                    <article class="blog-card">
+        <!-- Blog 1 -->
+        <article class="blog-card">
+            <img src="../images/blog1.png"
+                 alt="Learn Today, Lead Tomorrow: The Power of Professional Training">
 
-               <img src="blog1.png" alt="Learn Today, Lead Tomorrow: The Power of Professional Training.">
+            <div class="blog-content">
+                <div class="blog-date">▢ October 31, 2026</div>
 
-                <div class="blog-content">
+                <h2 class="blog-title">
+                    Learn Today, Lead Tomorrow: The Power of Professional Training.
+                </h2>
 
-                    <div class="blog-date">
-                        ▢ October 31, 2026                    </div>
+                <p class="blog-description">
+                    Discover how professional training builds practical skills,
+                    boosts confidence, and prepares you for a successful career.
+                </p>
 
-                    <h2 class="blog-title">
-                        Learn Today, Lead Tomorrow: The Power of Professional Training.                    </h2>
+                <a href="https://mdidminfowaytraining.blogspot.com/2026/10/learn-today-lead-tomorrow-power-of.html"
+                   class="read-more" target="_blank">
+                    Read More <span>→</span>
+                </a>
+            </div>
+        </article>
 
-                    <p class="blog-description">
-                        Discover how professional training builds practical skills, boosts confidence, and prepares you for a successful career.                    </p>
+        <!-- Blog 2 -->
+        <article class="blog-card">
+            <img src="../images/blog2.png"
+                 alt="From Classroom to Career: Why Practical Training Changes Everything">
 
-                    <a
-                        href="https://mdidminfowaytraining.blogspot.com/2026/10/learn-today-lead-tomorrow-power-of.html"
-                        class="read-more"
-                    >
-                        Read More <span>→</span>
-                    </a>
+            <div class="blog-content">
+                <div class="blog-date">▢ November 02, 2026</div>
 
-                </div>
-            </article>
-                    <article class="blog-card">
-<img src="blog2.png" alt="From Classroom to Career: Why Practical Training Changes Everything.">
+                <h2 class="blog-title">
+                    From Classroom to Career: Why Practical Training Changes Everything.
+                </h2>
 
-                <div class="blog-content">
+                <p class="blog-description">
+                    Practical training helps students turn classroom knowledge
+                    into real-world skills and prepare for their careers.
+                </p>
 
-                    <div class="blog-date">
-                        ▢ November 02, 2026                    </div>
+                <a href="https://mdidminfowaytraining.blogspot.com/2026/11/from-classroom-to-career-why-practical.html"
+                   class="read-more" target="_blank">
+                    Read More <span>→</span>
+                </a>
+            </div>
+        </article>
 
-                    <h2 class="blog-title">
-                        From Classroom to Career: Why Practical Training Changes Everything.                    </h2>
+        <!-- Blog 3 -->
+        <article class="blog-card">
+            <img src="../images/blog3.png"
+                 alt="Invest in Yourself: Why Professional Training Matters for Your Future">
 
-                    <p class="blog-description">
-                        Practical training helps students turn classroom knowledge into real-world skills and prepare for their careers..                    </p>
+            <div class="blog-content">
+                <div class="blog-date">▢ November 02, 2026</div>
 
-                    <a
-                        href="https://mdidminfowaytraining.blogspot.com/2026/11/from-classroom-to-career-why-practical.html"
-                        class="read-more"
-                    >
-                        Read More <span>→</span>
-                    </a>
+                <h2 class="blog-title">
+                    Invest in Yourself: Why Professional Training Matters for Your Future
+                </h2>
 
-                </div>
-            </article>
-                    <article class="blog-card">
+                <p class="blog-description">
+                    Professional training helps you develop valuable skills,
+                    boost confidence, and invest in a brighter career future.
+                </p>
 
-               <img src="blog3.png" alt="Invest in Yourself: Why Professional Training Matters for Your Future">
+                <a href="https://mdidminfowaytraining.blogspot.com/2026/11/invest-in-yourself-why-professional.html"
+                   class="read-more" target="_blank">
+                    Read More <span>→</span>
+                </a>
+            </div>
+        </article>
 
-                <div class="blog-content">
+        <!-- Blog 4 -->
+        <article class="blog-card">
+            <img src="../images/blog4.png"
+                 alt="From Learning to Earning: Your Path Through Digital Marketing Training">
 
-                    <div class="blog-date">
-                        ▢ November 02, 2026                    </div>
+            <div class="blog-content">
+                <div class="blog-date">▢ November 03, 2026</div>
 
-                    <h2 class="blog-title">
-                        Invest in Yourself: Why Professional Training Matters for Your Future                    </h2>
+                <h2 class="blog-title">
+                    From Learning to Earning: Your Path Through Digital Marketing Training.
+                </h2>
 
-                    <p class="blog-description">
-                        Professional training helps you develop valuable skills, boost confidence, and invest in a brighter career future.                    </p>
+                <p class="blog-description">
+                    Discover how digital marketing training helps you build
+                    practical skills, gain confidence, and turn your learning
+                    into career opportunities.
+                </p>
 
-                    <a
-                        href="https://mdidminfowaytraining.blogspot.com/2026/11/invest-in-yourself-why-professional.html"
-                        class="read-more"
-                    >
-                        Read More <span>→</span>
-                    </a>
+                <a href="https://mdidminfowaytraining.blogspot.com/2026/11/from-learning-to-earning-your-path.html"
+                   class="read-more" target="_blank">
+                    Read More <span>→</span>
+                </a>
+            </div>
+        </article>
 
-                </div>
-            </article>
-                    <article class="blog-card">
-
-               <img src="blog4.png" alt="From Learning to Earning: Your Path Through Digital Marketing Training.">
-                <div class="blog-content">
-
-                    <div class="blog-date">
-                        ▢ November 03, 2026                    </div>
-
-                    <h2 class="blog-title">
-                        From Learning to Earning: Your Path Through Digital Marketing Training.                    </h2>
-
-                    <p class="blog-description">
-                        Discover how digital marketing training helps you build practical skills, gain confidence, and turn your learning into career opportunities.                    </p>
-
-                    <a
-                        href="https://mdidminfowaytraining.blogspot.com/2026/11/from-learning-to-earning-your-path.html"
-                        class="read-more"
-                    >
-                        Read More <span>→</span>
-                    </a>
-
-                </div>
-            </article>
-        
     </div>
-
 </main>
 
 </body>
