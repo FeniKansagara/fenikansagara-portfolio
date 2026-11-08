@@ -95,7 +95,6 @@ header {
     border-radius: 18px;
     padding: 25px 18px;
     text-align: center;
-    text-decoration: none;
     color: #171717;
     transition: 0.3s;
     display: flex;
@@ -108,8 +107,8 @@ header {
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-.email-number {
-    color: #000 !important;
+.number {
+    color: #000;
     font-size: 19px;
     font-weight: 600;
     letter-spacing: 2px;
@@ -132,14 +131,19 @@ header {
 }
 
 .view-btn {
-    display: inline-block;
+    display: block;
     margin-top: 25px;
     padding: 12px 22px;
     background: #171717;
     color: #fff;
+    text-decoration: none;
     border-radius: 6px;
     font-size: 13px;
     transition: 0.3s;
+}
+
+.view-btn:hover {
+    background: #444;
 }
 
 .email-card:hover .view-btn {
