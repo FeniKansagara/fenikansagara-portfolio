@@ -1,1 +1,248 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Email Marketing | MyPortfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f7f7;
+    color: #171717;
+}
+
+/* Header */
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 22px 0;
+}
+
+.header-container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.back-btn {
+    background: #171717;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 23px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #444;
+}
+
+/* Main section */
+.container {
+    max-width: 1500px;
+    margin: 55px auto;
+    padding: 0 30px;
+}
+
+.page-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-heading h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.page-heading p {
+    color: #777;
+    font-size: 16px;
+}
+
+/* Email cards */
+.email-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.email-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    padding: 25px 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #171717;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.email-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.email-number {
+    color: #286096;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 28px;
+}
+
+.email-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    min-height: 60px;
+}
+
+.email-image {
+    width: 100%;
+    height: 330px;
+    object-fit: contain;
+    display: block;
+    margin: auto 0;
+}
+
+.view-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    background: #171717;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.email-card:hover .view-btn {
+    background: #444;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width: 1100px) {
+    .email-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    .email-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-heading h1 {
+        font-size: 32px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo">MyPortfolio.</div>
+        <a href="../index.php#projects" class="back-btn">← Back</a>
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="page-heading">
+        <h1>Email Marketing</h1>
+        <p>Explore my email campaigns and creative email designs.</p>
+    </div>
+
+    <div class="email-grid">
+
+        <!-- Email 1 -->
+        <a href="email1.html" class="email-card">
+            <div class="email-number">EMAIL 01</div>
+            <h2>Welcome Email</h2>
+            <img src="../images/email1.png"
+                 alt="Welcome Email Design"
+                 class="email-image">
+            <span class="view-btn">View Email →</span>
+        </a>
+
+        <!-- Email 2 -->
+        <a href="email2.html" class="email-card">
+            <div class="email-number">EMAIL 02</div>
+            <h2>Promotional Email</h2>
+            <img src="../images/email2.png"
+                 alt="Promotional Email Design"
+                 class="email-image">
+            <span class="view-btn">View Email →</span>
+        </a>
+
+        <!-- Email 3 -->
+        <a href="email3.html" class="email-card">
+            <div class="email-number">EMAIL 03</div>
+            <h2>Newsletter Email</h2>
+            <img src="../images/email3.png"
+                 alt="Newsletter Email Design"
+                 class="email-image">
+            <span class="view-btn">View Email →</span>
+        </a>
+
+        <!-- Email 4 -->
+        <a href="email4.html" class="email-card">
+            <div class="email-number">EMAIL 04</div>
+            <h2>Follow-up Email</h2>
+            <img src="../images/email4.png"
+                 alt="Follow-up Email Design"
+                 class="email-image">
+            <span class="view-btn">View Email →</span>
+        </a>
+
+    </div>
+
+</main>
+
+<footer>
+    © 2026 MyPortfolio. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+
