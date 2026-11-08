@@ -481,7 +481,7 @@ footer {
     </div>
 
 
-<!-- EMAIL AUTOMATION -->
+
 <section class="automation-section">
 
     <div class="automation-heading">
@@ -491,174 +491,169 @@ footer {
 
     <div class="automation-flow">
 
-        <!-- Start -->
-        <div class="flow-start"></div>
+        <!-- START -->
+        <div class="flow-main">
 
-        <div class="flow-connector"></div>
-
-        <!-- Trigger -->
-        <div class="flow-node">
-            <div class="flow-icon">👤</div>
-            <div class="flow-content">
-                <h3>Contact Signup Trigger</h3>
-                <p>New Contact Subscribes to Email List</p>
+            <div class="flow-node">
+                <div class="flow-icon">●</div>
+                <div class="flow-content">
+                    <h3>Contact Signup Trigger</h3>
+                    <p>New Contact Subscribes</p>
+                </div>
             </div>
-        </div>
 
-        <div class="flow-connector"></div>
-
-        <!-- Welcome -->
-        <div class="flow-node">
-            <div class="flow-icon">✉</div>
-            <div class="flow-content">
-                <h3>Welcome Email</h3>
-                <p>Email 01 · Immediately</p>
-            </div>
-        </div>
-
-        <div class="flow-connector"></div>
-
-        <!-- Wait -->
-        <div class="flow-delay">◷ &nbsp; 2 Days Delay</div>
-
-        <div class="flow-connector"></div>
-
-        <!-- Condition -->
-        <div class="flow-node flow-condition">
-            <div class="flow-icon">⚙</div>
-            <div class="flow-content">
-                <h3>If / Else Condition</h3>
-                <p>Check Contact Activity</p>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- FIRST CONDITION BRANCHES -->
-    <div class="flow-branches">
-
-        <!-- YES BRANCH -->
-        <div class="flow-branch">
-
-            <div class="flow-label">YES</div>
+            <div class="flow-line"></div>
 
             <div class="flow-node">
                 <div class="flow-icon">✉</div>
                 <div class="flow-content">
-                    <h3>Training Information Email</h3>
-                    <p>Email 02</p>
+                    <h3>Send Welcome Email</h3>
+                    <p>Email 01 · Immediately</p>
                 </div>
             </div>
 
-            <div class="flow-connector"></div>
+            <div class="flow-line"></div>
 
             <div class="flow-delay">◷ &nbsp; 2 Days Delay</div>
 
-            <div class="flow-connector"></div>
+            <div class="flow-line"></div>
 
             <div class="flow-node flow-condition">
-                <div class="flow-icon">⚙</div>
+                <div class="flow-icon">◇</div>
                 <div class="flow-content">
-                    <h3>Registration Condition</h3>
-                    <p>Check Registration Status</p>
+                    <h3>If / Else Condition</h3>
+                    <p>Check Contact Activity</p>
                 </div>
-            </div>
-
-            <!-- SECOND CONDITION -->
-            <div class="flow-sub-branches">
-
-                <!-- REGISTRATION YES -->
-                <div class="flow-sub-branch">
-
-                    <div class="flow-label">YES</div>
-
-                    <div class="flow-node">
-                        <div class="flow-icon">✉</div>
-                        <div class="flow-content">
-                            <h3>Registration Confirmation</h3>
-                            <p>Email 03</p>
-                        </div>
-                    </div>
-
-                    <div class="flow-connector"></div>
-
-                    <div class="flow-node">
-                        <div class="flow-icon">✉</div>
-                        <div class="flow-content">
-                            <h3>Thank You Email</h3>
-                            <p>Email 04</p>
-                        </div>
-                    </div>
-
-                    <div class="flow-end">✓ Automation Ends</div>
-
-                </div>
-
-                <!-- REGISTRATION NO -->
-                <div class="flow-sub-branch">
-
-                    <div class="flow-label">NO</div>
-
-                    <div class="flow-node">
-                        <div class="flow-icon">✉</div>
-                        <div class="flow-content">
-                            <h3>Training Reminder Email</h3>
-                            <p>Follow-up Email</p>
-                        </div>
-                    </div>
-
-                    <div class="flow-connector"></div>
-
-                    <div class="flow-node">
-                        <div class="flow-icon">✉</div>
-                        <div class="flow-content">
-                            <h3>Thank You Email</h3>
-                            <p>Email 04</p>
-                        </div>
-                    </div>
-
-                    <div class="flow-end">✓ Automation Ends</div>
-
-                </div>
-
             </div>
 
         </div>
 
-        <!-- NO BRANCH -->
-        <div class="flow-branch">
+        <!-- YES AND NO BRANCHES -->
+        <div class="flow-branches">
 
-            <div class="flow-label">NO</div>
+            <!-- YES BRANCH -->
+            <div class="flow-branch">
 
-            <div class="flow-node">
-                <div class="flow-icon">✉</div>
-                <div class="flow-content">
-                    <h3>Welcome Reminder Email</h3>
-                    <p>Follow-up Email</p>
+                <div class="flow-label">YES</div>
+
+                <div class="flow-node">
+                    <div class="flow-icon">✉</div>
+                    <div class="flow-content">
+                        <h3>Send Training Information Email</h3>
+                        <p>Email 02</p>
+                    </div>
                 </div>
+
+                <div class="flow-line"></div>
+
+                <div class="flow-delay">◷ &nbsp; 2 Days Delay</div>
+
+                <div class="flow-line"></div>
+
+                <div class="flow-node flow-condition">
+                    <div class="flow-icon">◇</div>
+                    <div class="flow-content">
+                        <h3>Registration Condition</h3>
+                        <p>Check Registration Activity</p>
+                    </div>
+                </div>
+
+                <!-- REGISTRATION YES / NO -->
+                <div class="flow-sub-branches">
+
+                    <div class="flow-sub-branch">
+
+                        <div class="flow-label">YES</div>
+
+                        <div class="flow-node">
+                            <div class="flow-icon">✉</div>
+                            <div class="flow-content">
+                                <h3>Registration Confirmation</h3>
+                                <p>Email 03</p>
+                            </div>
+                        </div>
+
+                        <div class="flow-line"></div>
+
+                        <div class="flow-node">
+                            <div class="flow-icon">✉</div>
+                            <div class="flow-content">
+                                <h3>Send Thank You Email</h3>
+                                <p>Email 04</p>
+                            </div>
+                        </div>
+
+                        <div class="flow-end">✓ End Automation</div>
+
+                    </div>
+
+                    <div class="flow-sub-branch">
+
+                        <div class="flow-label">NO</div>
+
+                        <div class="flow-node">
+                            <div class="flow-icon">✉</div>
+                            <div class="flow-content">
+                                <h3>Training Reminder Email</h3>
+                                <p>Follow-up Email</p>
+                            </div>
+                        </div>
+
+                        <div class="flow-line"></div>
+
+                        <div class="flow-node">
+                            <div class="flow-icon">✉</div>
+                            <div class="flow-content">
+                                <h3>Send Thank You Email</h3>
+                                <p>Email 04</p>
+                            </div>
+                        </div>
+
+                        <div class="flow-end">✓ End Automation</div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="flow-connector"></div>
+            <!-- NO BRANCH -->
+            <div class="flow-branch">
 
-            <div class="flow-delay">◷ &nbsp; 2 Days Delay</div>
+                <div class="flow-label">NO</div>
 
-            <div class="flow-connector"></div>
-
-            <div class="flow-node">
-                <div class="flow-icon">✉</div>
-                <div class="flow-content">
-                    <h3>Thank You Email</h3>
-                    <p>Email 04</p>
+                <div class="flow-node">
+                    <div class="flow-icon">✉</div>
+                    <div class="flow-content">
+                        <h3>Send Welcome Reminder Email</h3>
+                        <p>Follow-up Email</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="flow-end">✓ Automation Ends</div>
+                <div class="flow-line"></div>
+
+                <div class="flow-delay">◷ &nbsp; 2 Days Delay</div>
+
+                <div class="flow-line"></div>
+
+                <div class="flow-node">
+                    <div class="flow-icon">✉</div>
+                    <div class="flow-content">
+                        <h3>Send Thank You Email</h3>
+                        <p>Email 04</p>
+                    </div>
+                </div>
+
+                <div class="flow-end">✓ End Automation</div>
+
+            </div>
 
         </div>
 
     </div>
 
 </section>
+
 
 </main>
 
