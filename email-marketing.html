@@ -178,6 +178,175 @@ footer {
         font-size: 24px;
     }
 }
+/* Email Automation Section */
+.automation-section {
+    margin-top: 90px;
+    padding: 55px 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+}
+
+.automation-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.automation-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.automation-heading p {
+    color: #777;
+    font-size: 15px;
+}
+
+.flow-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flow-node {
+    width: 300px;
+    padding: 17px 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-left: 4px solid #171717;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.flow-node h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.flow-node p {
+    font-size: 12px;
+    color: #777;
+}
+
+.flow-node.trigger {
+    border-left-color: #8b9b82;
+}
+
+.flow-node.condition {
+    background: #f7f7f7;
+    border-left-color: #b76e4d;
+}
+
+.flow-line {
+    width: 2px;
+    height: 35px;
+    background: #ccc;
+}
+
+.flow-dot {
+    width: 10px;
+    height: 10px;
+    background: #b76e4d;
+    border-radius: 50%;
+    margin: -2px 0;
+}
+
+.flow-branches {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.flow-branch {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.branch-label {
+    display: inline-block;
+    background: #171717;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.flow-small {
+    width: 100%;
+    max-width: 260px;
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.flow-small span {
+    display: block;
+    color: #888;
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.flow-small.condition {
+    border-left: 4px solid #b76e4d;
+}
+
+.flow-sub-branches {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.flow-sub-branches .flow-small {
+    font-size: 12px;
+    padding: 12px 7px;
+}
+
+.flow-end {
+    margin-top: 20px;
+    color: #777;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media(max-width: 700px) {
+    .flow-branches {
+        grid-template-columns: 1fr;
+    }
+
+    .automation-section {
+        padding: 35px 15px;
+    }
+
+    .automation-heading h2 {
+        font-size: 28px;
+    }
+
+    .flow-node {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media(max-width: 400px) {
+    .flow-sub-branches {
+        grid-template-columns: 1fr;
+    }
+}
+
 </style>
 </head>
 
