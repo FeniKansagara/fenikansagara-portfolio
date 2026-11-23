@@ -1,11 +1,13 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEO Audit | MyPortfolio</title>
+
+<title>SEO Audit Project | Feni Kansagara</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
 * {
@@ -15,163 +17,158 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     background: #f7f7f7;
-    color: #171717;
-    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.7;
 }
 
-/* Header */
-.top-header {
-    width: 100%;
-    background: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 22px 0;
-}
-
-.header-container {
-    max-width: 1160px;
+.container {
+    max-width: 1050px;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
-}
-
-.logo {
-    font-family: Georgia, serif;
-    font-size: 30px;
-    font-weight: bold;
+    padding: 40px 20px;
 }
 
 .back-btn {
-    background: #171717;
+    display: inline-block;
+    text-decoration: none;
+    color: #222;
+    border: 1px solid #ccc;
+    padding: 9px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero {
+    background: #fff;
+    padding: 45px 35px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #e5e5e5;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: #666;
+}
+
+.tag {
+    display: inline-block;
+    background: #eee;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 22px;
+    border: 1px solid #e5e5e5;
+}
+
+.section h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.section p {
+    color: #666;
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tool {
+    background: #f0f0f0;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.process {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.process-box {
+    padding: 18px;
+    background: #f6f6f6;
+    border-radius: 10px;
+}
+
+.process-box h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.screenshots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.screenshots img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.findings li {
+    margin-left: 20px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: #222;
     color: #fff;
     text-decoration: none;
-    padding: 16px 23px;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 14px;
     transition: 0.3s;
 }
 
-.back-btn:hover {
-    background: #444;
+.download-btn:hover {
+    background: #555;
 }
 
-/* Main Content */
-.container {
-    max-width: 1160px;
-    margin: 70px auto;
-    padding: 55px 52px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-}
-
-.tag {
+footer {
+    text-align: center;
+    padding: 25px;
     color: #777;
     font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 28px;
 }
 
-h1 {
-    font-family: Georgia, serif;
-    font-size: 42px;
-    margin-bottom: 18px;
-}
-
-.subtitle {
-    color: #888;
-    font-size: 15px;
-    margin-bottom: 30px;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid #ddd;
-    margin-bottom: 40px;
-}
-
-h2 {
-    font-family: Georgia, serif;
-    font-size: 27px;
-    margin: 35px 0 20px;
-}
-
-p {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    padding: 17px 15px;
-    text-align: left;
-    border-bottom: 1px solid #e5e5e5;
-    font-size: 15px;
-}
-
-th {
-    background: #f5f5f5;
-    font-weight: bold;
-}
-
-.status {
-    font-weight: bold;
-    color: #333;
-}
-
-.page-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 20px;
-}
-
-.page-list span {
-    background: #f2f2f2;
-    padding: 11px 18px;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.footer {
-    text-align: center;
-    color: #888;
-    padding: 25px;
-    font-size: 14px;
-}
-
-/* Mobile Responsive */
-@media(max-width: 768px) {
-    .container {
-        margin: 30px 15px;
-        padding: 30px 20px;
+@media(max-width: 650px) {
+    .hero h1 {
+        font-size: 29px;
     }
 
-    h1 {
-        font-size: 32px;
+    .process,
+    .screenshots {
+        grid-template-columns: 1fr;
     }
 
-    h2 {
-        font-size: 23px;
-    }
-
-    .logo {
-        font-size: 24px;
-    }
-
-    th, td {
-        padding: 12px 8px;
-        font-size: 13px;
+    .section {
+        padding: 22px;
     }
 }
 </style>
@@ -179,113 +176,134 @@ th {
 
 <body>
 
-<header class="top-header">
-    <div class="header-container">
-        <div class="logo">MyPortfolio.</div>
+<div class="container">
 
-        <a href="seo-audit-blog.html" class="back-btn">
-            ← Back
-        </a>
-    </div>
-</header>
+<a href="index.html#projects" class="back-btn">
+    ← Back to Portfolio
+</a>
 
-<main class="container">
-
-    <div class="tag">SEO PROJECT</div>
-
-    <h1>SEO Audit Report</h1>
-
-    <div class="subtitle">
-        Website Analysis | Technical SEO | On-Page SEO
-    </div>
-
-    <hr>
-
-    <h2>Website Details</h2>
-
-    <p><strong>Website:</strong> https://mdidminfoway.com/</p>
-    <p><strong>Audit Date:</strong> 04 August 2026</p>
-
-    <h2>Website Pages Reviewed</h2>
-
-    <div class="page-list">
-                    <span>Home</span>
-                    <span>About</span>
-                    <span>Service</span>
-                    <span>Feature</span>
-                    <span>Team</span>
-                    <span>Blog</span>
-                    <span>Contact</span>
-            </div>
-
-    <h2>On-Page SEO</h2>
-
-    <table>
-        <tr>
-            <th>SEO Element</th>
-            <th>Status</th>
-        </tr>
-
-                <tr>
-            <td>Title Tag</td>
-            <td class="status">Available</td>
-        </tr>
-                <tr>
-            <td>Meta Description</td>
-            <td class="status">Available</td>
-        </tr>
-                <tr>
-            <td>H1 Heading</td>
-            <td class="status">Multiple</td>
-        </tr>
-                <tr>
-            <td>Internal Links</td>
-            <td class="status">Not Available</td>
-        </tr>
-                <tr>
-            <td>URL Structure</td>
-            <td class="status">Good</td>
-        </tr>
-            </table>
-
-    <h2>Technical SEO</h2>
-
-    <table>
-        <tr>
-            <th>SEO Element</th>
-            <th>Status</th>
-        </tr>
-
-                <tr>
-            <td>robots.txt</td>
-            <td class="status">Missing</td>
-        </tr>
-                <tr>
-            <td>sitemap.xml</td>
-            <td class="status">Missing</td>
-        </tr>
-                <tr>
-            <td>Mobile Friendly</td>
-            <td class="status">Yes</td>
-        </tr>
-                <tr>
-            <td>Page Speed</td>
-            <td class="status">Good</td>
-        </tr>
-            </table>
-
-    <h2>Conclusion</h2>
+<!-- PROJECT OVERVIEW -->
+<div class="hero">
+    <h1>SEO Audit & Website Analysis</h1>
 
     <p>
-        The website has a good URL structure, mobile-friendly design
-        and page speed. However, improvements are required in internal
-        linking, robots.txt and sitemap.xml to strengthen its SEO performance.
+        A practical SEO audit project focused on analyzing
+        website structure, identifying technical SEO issues
+        and evaluating on-page optimization.
     </p>
 
-</main>
+    <span class="tag">SEO Project</span>
+    <span class="tag">Practical Work</span>
+</div>
 
-<footer class="footer">
-    © 2026 MyPortfolio. All Rights Reserved.
+<!-- OVERVIEW -->
+<div class="section">
+    <h2>Project Overview</h2>
+
+    <p>
+        I performed a website SEO audit using Screaming Frog
+        SEO Spider. The purpose was to analyze website pages,
+        review SEO elements and identify areas that need
+        improvement.
+    </p>
+</div>
+
+<!-- TOOLS -->
+<div class="section">
+    <h2>Tools Used</h2>
+
+    <div class="tools">
+        <span class="tool">Screaming Frog SEO Spider</span>
+        <span class="tool">Microsoft Excel</span>
+    </div>
+</div>
+
+<!-- PROCESS -->
+<div class="section">
+    <h2>SEO Audit Process</h2>
+
+    <div class="process">
+
+        <div class="process-box">
+            <h3>01. Website Crawling</h3>
+            <p>Scanned website URLs using Screaming Frog.</p>
+        </div>
+
+        <div class="process-box">
+            <h3>02. Data Export</h3>
+            <p>Exported crawl data into Microsoft Excel.</p>
+        </div>
+
+        <div class="process-box">
+            <h3>03. SEO Analysis</h3>
+            <p>Reviewed technical and on-page SEO elements.</p>
+        </div>
+
+        <div class="process-box">
+            <h3>04. Issue Identification</h3>
+            <p>Identified SEO issues and improvement areas.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- SCREENSHOTS -->
+<div class="section">
+    <h2>Project Screenshots</h2>
+
+    <div class="screenshots">
+
+        <img src="images/seo-audit1.png"
+             alt="Screaming Frog SEO Audit Screenshot">
+
+        <img src="images/seo-audit2.png"
+             alt="SEO Audit Excel Report">
+
+        <img src="images/seo-audit3.png"
+             alt="Website SEO Analysis">
+
+    </div>
+</div>
+
+<!-- FINDINGS -->
+<div class="section">
+    <h2>Key SEO Findings</h2>
+
+    <ul class="findings">
+        <li>Website page title analysis</li>
+        <li>Meta description analysis</li>
+        <li>Heading structure review</li>
+        <li>URL structure analysis</li>
+        <li>Technical SEO checks</li>
+        <li>Internal linking analysis</li>
+    </ul>
+
+    <p style="margin-top:12px;">
+        Note: Final findings should be updated according
+        to the actual Screaming Frog audit results.
+    </p>
+</div>
+
+<!-- DOWNLOAD -->
+<div class="section">
+    <h2>SEO Audit Report</h2>
+
+    <p>
+        Download the Excel report containing the SEO audit
+        data and analysis.
+    </p>
+
+    <a href="reports/SEO_Audit_Report.xlsx"
+       download="SEO_Audit_Report.xlsx"
+       class="download-btn">
+       ↓ Download SEO Audit Report
+    </a>
+</div>
+
+</div>
+
+<footer>
+    © 2026 Feni Kansagara | SEO Audit Project
 </footer>
 
 </body>
