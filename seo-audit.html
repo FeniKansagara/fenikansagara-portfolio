@@ -23,10 +23,10 @@ body {
     line-height: 1.7;
 }
 
-.container {
+.back-wrapper {
     max-width: 1050px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 15px 20px 0;
 }
 
 .back-btn {
@@ -35,32 +35,34 @@ body {
     justify-content: center;
     width: fit-content;
     margin-left: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background: #171717;
-    color: #ffffff;
+    color: #fff;
     padding: 10px 26px;
     border-radius: 7px;
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .back-btn:hover {
-    background: #333333;
-    color: #ffffff;
+    background: #444;
 }
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
 }
 
+/* HERO SECTION */
 .hero {
+    max-width: 1050px;
+    margin: 0 auto 25px;
     background: #fff;
     padding: 45px 35px;
     border-radius: 15px;
-    margin-bottom: 25px;
     border: 1px solid #e5e5e5;
+    text-align: center;
 }
 
 .hero h1 {
@@ -81,11 +83,13 @@ h1, h2 {
     margin-top: 15px;
 }
 
+/* GENERAL SECTIONS */
 .section {
+    max-width: 1050px;
+    margin: 0 auto 22px;
     background: #fff;
     padding: 30px;
     border-radius: 15px;
-    margin-bottom: 22px;
     border: 1px solid #e5e5e5;
 }
 
@@ -98,6 +102,7 @@ h1, h2 {
     color: #666;
 }
 
+/* TOOLS */
 .tools {
     display: flex;
     flex-wrap: wrap;
@@ -111,6 +116,7 @@ h1, h2 {
     font-size: 14px;
 }
 
+/* PROCESS */
 .process {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -128,24 +134,42 @@ h1, h2 {
     margin-bottom: 5px;
 }
 
+/* PROJECT SCREENSHOTS */
 .screenshots {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
+    margin-top: 20px;
 }
 
-.screenshots img {
+.screenshot-box {
     width: 100%;
-    border-radius: 10px;
+    height: 220px;
+    padding: 8px;
     border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f7f7f7;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.screenshot-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* FINDINGS */
 .findings li {
     margin-left: 20px;
     margin-bottom: 8px;
     color: #555;
 }
 
+/* DOWNLOAD BUTTON */
 .download-btn {
     display: inline-block;
     margin-top: 15px;
@@ -162,6 +186,7 @@ h1, h2 {
     background: #555;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
     padding: 25px;
@@ -169,9 +194,19 @@ footer {
     font-size: 13px;
 }
 
+/* MOBILE RESPONSIVE */
 @media(max-width: 650px) {
+
     .hero h1 {
         font-size: 29px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .section {
+        padding: 22px;
     }
 
     .process,
@@ -179,36 +214,8 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .section {
-        padding: 22px;
-    }
-}.screenshot-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.screenshot-box {
-    width: 100%;
-    height: 160px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #f5f5f5;
-    padding: 5px;
-}
-
-.screenshot-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
-@media (max-width: 600px) {
-    .screenshot-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .screenshot-box {
+        height: 200px;
     }
 }
 </style>
@@ -216,29 +223,31 @@ footer {
 
 <body>
 
+<!-- BACK BUTTON -->
 <div class="back-wrapper">
     <a href="index.html#projects" class="back-btn">
         ← Back
     </a>
 </div>
 
-
-<!-- PROJECT OVERVIEW -->
+<!-- PROJECT TITLE -->
 <div class="hero">
+
     <h1>SEO Audit & Website Analysis</h1>
 
     <p>
-        A practical SEO audit project focused on analyzing
-        website structure, identifying technical SEO issues
-        and evaluating on-page optimization.
+        A practical SEO audit project focused on analyzing website structure,
+        identifying technical SEO issues and evaluating on-page optimization.
     </p>
 
     <span class="tag">SEO Project</span>
     <span class="tag">Practical Work</span>
+
 </div>
 
-<!-- OVERVIEW -->
+<!-- PROJECT OVERVIEW -->
 <div class="section">
+
     <h2>Project Overview</h2>
 
     <p>
@@ -247,20 +256,24 @@ footer {
         review SEO elements and identify areas that need
         improvement.
     </p>
+
 </div>
 
-<!-- TOOLS -->
+<!-- TOOLS USED -->
 <div class="section">
+
     <h2>Tools Used</h2>
 
     <div class="tools">
         <span class="tool">Screaming Frog SEO Spider</span>
         <span class="tool">Microsoft Excel</span>
     </div>
+
 </div>
 
-<!-- PROCESS -->
+<!-- SEO AUDIT PROCESS -->
 <div class="section">
+
     <h2>SEO Audit Process</h2>
 
     <div class="process">
@@ -286,49 +299,51 @@ footer {
         </div>
 
     </div>
+
 </div>
 
-<!-- SCREENSHOTS -->
+<!-- PROJECT SCREENSHOTS -->
 <div class="section">
+
     <h2>Project Screenshots</h2>
 
-       
+    <div class="screenshots">
 
+        <div class="screenshot-box">
+            <img src="images/seo1.png" alt="SEO Audit Screenshot 1">
+        </div>
 
+        <div class="screenshot-box">
+            <img src="images/seo2.png" alt="SEO Audit Screenshot 2">
+        </div>
 
-    <div class="screenshot-box">
-        <img src="images/seo1.png" alt="SEO Audit Screenshot 1">
+        <div class="screenshot-box">
+            <img src="images/seo3.png" alt="SEO Audit Screenshot 3">
+        </div>
+
+        <div class="screenshot-box">
+            <img src="images/seo4.png" alt="SEO Audit Screenshot 4">
+        </div>
+
+        <div class="screenshot-box">
+            <img src="images/seo5.png" alt="SEO Audit Screenshot 5">
+        </div>
+
+        <div class="screenshot-box">
+            <img src="images/seo6.png" alt="SEO Audit Screenshot 6">
+        </div>
+
+        <div class="screenshot-box">
+            <img src="images/seo7.png" alt="SEO Audit Screenshot 7">
+        </div>
+
     </div>
 
-    <div class="screenshot-box">
-        <img src="images/seo2.png" alt="SEO Audit Screenshot 2">
-    </div>
-
-    <div class="screenshot-box">
-        <img src="images/seo3.png" alt="SEO Audit Screenshot 3">
-    </div>
-
-    <div class="screenshot-box">
-        <img src="images/seo4.png" alt="SEO Audit Screenshot 4">
-    </div>
-
-    <div class="screenshot-box">
-        <img src="images/seo5.png" alt="SEO Audit Screenshot 5">
-    </div>
-
-    <div class="screenshot-box">
-        <img src="images/seo6.png" alt="SEO Audit Screenshot 6">
-    </div>
-
-    <div class="screenshot-box">
-        <img src="images/seo7.png" alt="SEO Audit Screenshot 7">
-    </div>
 </div>
 
-</div>
-
-<!-- FINDINGS -->
+<!-- KEY SEO FINDINGS -->
 <div class="section">
+
     <h2>Key SEO Findings</h2>
 
     <ul class="findings">
@@ -344,28 +359,27 @@ footer {
         Note: Final findings should be updated according
         to the actual Screaming Frog audit results.
     </p>
+
 </div>
 
-<!-- DOWNLOAD -->
+<!-- SEO AUDIT REPORT -->
 <div class="section">
+
     <h2>SEO Audit Report</h2>
 
     <p>
-        Download the Excel report containing the SEO audit
-        data and analysis.
+        Download the report containing the SEO audit data and analysis.
     </p>
 
-    
-<a href="SEO_Audit_Combined_Report.pdf"
-   target="_blank"
-   class="download-btn">
-    ↓ Download SEO Audit Report
-</a>
+    <a href="SEO_Audit_Combined_Report.pdf"
+       target="_blank"
+       class="download-btn">
+        ↓ View SEO Audit Report
+    </a>
 
 </div>
 
-</div>
-
+<!-- FOOTER -->
 <footer>
     © 2026 Feni Kansagara | SEO Audit Project
 </footer>
