@@ -30,13 +30,24 @@ body {
 }
 
 .back-btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #171717;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 6px;
     text-decoration: none;
-    color: #222;
-    border: 1px solid #ccc;
-    padding: 9px 20px;
-    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
     margin-bottom: 30px;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #444444;
+    color: #ffffff;
 }
 
 h1, h2 {
