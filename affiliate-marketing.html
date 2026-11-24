@@ -1,1 +1,533 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Affiliate Marketing | Feni Kansagara</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f7f7f7;
+    color:#222;
+    line-height:1.7;
+}
+
+.container{
+    max-width:1050px;
+    margin:auto;
+    padding:35px 20px;
+}
+
+/* BACK BUTTON */
+.back-wrapper{
+    display:flex;
+    justify-content:flex-end;
+    width:100%;
+    margin-bottom:25px;
+}
+
+.back-btn{
+    display:inline-block;
+    background:#171717;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 28px;
+    border-radius:7px;
+    font-size:13px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#444;
+    transform:translateY(-2px);
+}
+
+/* HERO */
+.hero{
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:15px;
+    padding:55px 25px;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    color:#222;
+    margin-bottom:12px;
+}
+
+.hero p{
+    max-width:750px;
+    margin:0 auto 22px;
+    color:#666;
+    font-size:14px;
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+}
+
+.tags span{
+    background:#eee7da;
+    color:#333;
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+/* COMMON SECTION */
+.section{
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:14px;
+    padding:30px;
+    margin-bottom:25px;
+}
+
+.section h2{
+    font-family:'Playfair Display',serif;
+    font-size:27px;
+    margin-bottom:18px;
+    color:#222;
+}
+
+.section p{
+    color:#666;
+    font-size:14px;
+    margin-bottom:12px;
+}
+
+/* STORE */
+.store-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    align-items:center;
+}
+
+.store-image{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:10px;
+    background:#eee7da;
+}
+
+.store-content h3{
+    font-family:'Playfair Display',serif;
+    font-size:25px;
+    margin-bottom:12px;
+}
+
+.store-content p{
+    margin-bottom:12px;
+}
+
+.store-btn{
+    display:inline-block;
+    margin-top:12px;
+    background:#171717;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 23px;
+    border-radius:6px;
+    font-size:13px;
+    transition:.3s;
+}
+
+.store-btn:hover{
+    background:#444;
+}
+
+/* CAMPAIGN */
+.campaign-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.campaign-card{
+    background:#fafafa;
+    border:1px solid #e8e8e8;
+    padding:23px;
+    border-radius:10px;
+}
+
+.campaign-card h3{
+    font-size:17px;
+    margin-bottom:10px;
+}
+
+.campaign-card p{
+    font-size:13px;
+    margin:0;
+}
+
+/* TOOLS */
+.tools{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.tools span{
+    background:#eee7da;
+    padding:10px 18px;
+    border-radius:6px;
+    font-size:13px;
+}
+
+/* PROCESS */
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.process-card{
+    border:1px solid #e8e8e8;
+    background:#fafafa;
+    padding:20px;
+    border-radius:10px;
+}
+
+.process-card .number{
+    font-size:23px;
+    color:#b58b45;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.process-card h3{
+    font-size:15px;
+    margin-bottom:8px;
+}
+
+.process-card p{
+    font-size:12px;
+    margin:0;
+}
+
+/* SCREENSHOTS */
+.screenshot-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.screenshot-card{
+    background:#fafafa;
+    border:1px solid #e5e5e5;
+    border-radius:10px;
+    padding:12px;
+}
+
+.screenshot-card img{
+    width:100%;
+    height:240px;
+    object-fit:contain;
+    background:#eee;
+    border-radius:7px;
+}
+
+.screenshot-card h3{
+    font-size:15px;
+    margin:12px 5px 4px;
+}
+
+.screenshot-card p{
+    font-size:12px;
+    margin:0 5px 5px;
+}
+
+/* LEARNING */
+.learning-list{
+    padding-left:20px;
+}
+
+.learning-list li{
+    color:#666;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+    background:#171717;
+    color:#fff;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:35px;
+}
+
+footer p{
+    font-size:12px;
+    color:#ccc;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+    .hero h1{font-size:32px;}
+    .store-box,
+    .campaign-grid,
+    .screenshot-grid{
+        grid-template-columns:1fr;
+    }
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+    .section{padding:22px;}
+    .store-image{height:220px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- BACK BUTTON -->
+<div class="back-wrapper">
+    <a href="index.html#projects" class="back-btn">← Back</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Affiliate Marketing</h1>
+
+    <p>
+        A practical affiliate marketing project focused on creating
+        an online fashion store and promoting products through
+        a Google Ads campaign.
+    </p>
+
+    <div class="tags">
+        <span>Affiliate Marketing</span>
+        <span>Fashion E-Commerce</span>
+        <span>Google Ads</span>
+        <span>Product Promotion</span>
+    </div>
+</section>
+
+<!-- PROJECT OVERVIEW -->
+<section class="section">
+    <h2>Project Overview</h2>
+
+    <p>
+        This project demonstrates my practical understanding of
+        affiliate marketing through an online fashion store and
+        product promotion campaign.
+    </p>
+
+    <p>
+        I created a fashion store named LAVERA, featuring women's
+        clothing and accessories. I also worked on running a
+        product advertising campaign to understand how online
+        advertising can attract potential customers.
+    </p>
+</section>
+
+<!-- FASHION STORE -->
+<section class="section">
+    <h2>01. Affiliate Fashion Store</h2>
+
+    <div class="store-box">
+
+        <img src="images/lavera-store.png"
+             alt="LAVERA Fashion Store"
+             class="store-image">
+
+        <div class="store-content">
+            <h3>LAVERA – Fashion & Accessories</h3>
+
+            <p>
+                Created an online fashion store with a clean,
+                elegant design focused on women's clothing,
+                accessories and fashion collections.
+            </p>
+
+            <p>
+                The store includes product categories, product
+                displays and essential shopping information.
+            </p>
+
+            <a href="YOUR_LAVERA_STORE_URL"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="store-btn">
+               Open Fashion Store ↗
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- AD CAMPAIGN -->
+<section class="section">
+    <h2>02. Google Ads Campaign</h2>
+
+    <p>
+        Created and ran a product advertising campaign to
+        understand paid promotion and how potential customers
+        can discover products through online advertisements.
+    </p>
+
+    <div class="campaign-grid">
+
+        <div class="campaign-card">
+            <h3>Campaign Setup</h3>
+            <p>
+                Worked on campaign setup and product promotion
+                through Google Ads.
+            </p>
+        </div>
+
+        <div class="campaign-card">
+            <h3>Product Promotion</h3>
+            <p>
+                Focused on presenting fashion products to
+                potential online shoppers.
+            </p>
+        </div>
+
+        <div class="campaign-card">
+            <h3>Target Audience</h3>
+            <p>
+                Explored audience targeting to reach people
+                interested in fashion products.
+            </p>
+        </div>
+
+        <div class="campaign-card">
+            <h3>Campaign Monitoring</h3>
+            <p>
+                Explored campaign performance and advertising
+                metrics to understand results.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TOOLS -->
+<section class="section">
+    <h2>Tools & Platforms Used</h2>
+
+    <div class="tools">
+        <span>Google Merchant Center</span>
+        <span>Google Ads</span>
+        <span>Google Sites</span>
+        <span>Canva</span>
+        <span>Affiliate Marketing</span>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section">
+    <h2>Project Workflow</h2>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+            <div class="number">01</div>
+            <h3>Store Planning</h3>
+            <p>Selected the fashion store concept and planned its categories.</p>
+        </div>
+
+        <div class="process-card">
+            <div class="number">02</div>
+            <h3>Store Creation</h3>
+            <p>Designed the LAVERA online fashion store.</p>
+        </div>
+
+        <div class="process-card">
+            <div class="number">03</div>
+            <h3>Product Setup</h3>
+            <p>Worked on product information and store presentation.</p>
+        </div>
+
+        <div class="process-card">
+            <div class="number">04</div>
+            <h3>Campaign Creation</h3>
+            <p>Set up a product advertising campaign in Google Ads.</p>
+        </div>
+
+        <div class="process-card">
+            <div class="number">05</div>
+            <h3>Product Promotion</h3>
+            <p>Worked on promoting products through online advertising.</p>
+        </div>
+
+        <div class="process-card">
+            <div class="number">06</div>
+            <h3>Performance Review</h3>
+            <p>Reviewed available campaign information and metrics.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECT SCREENSHOTS -->
+<section class="section">
+    <h2>Project Screenshots</h2>
+
+    <div class="screenshot-grid">
+
+        <div class="screenshot-card">
+            <img src="images/affiliate-store.png"
+                 alt="Affiliate fashion store screenshot">
+            <h3>Fashion Store</h3>
+            <p>LAVERA online store design and product display.</p>
+        </div>
+
+        <div class="screenshot-card">
+            <img src="images/affiliate-ads.png"
+                 alt="Google Ads campaign screenshot">
+            <h3>Google Ads Campaign</h3>
+            <p>Product advertising campaign dashboard screenshot.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- LEARNINGS -->
+<section class="section">
+    <h2>Key Learnings</h2>
+
+    <ul class="learning-list">
+        <li>Understanding affiliate marketing concepts.</li>
+        <li>Creating and presenting an online fashion store.</li>
+        <li>Understanding product promotion through Google Ads.</li>
+        <li>Learning about Google Merchant Center.</li>
+        <li>Understanding the importance of product presentation and audience targeting.</li>
+    </ul>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Feni Kansagara | Affiliate Marketing Project</p>
+    <p>Digital Marketing Portfolio</p>
+</footer>
+
+</body>
+</html>
+
